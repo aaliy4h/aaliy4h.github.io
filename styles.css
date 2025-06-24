@@ -16,13 +16,17 @@ h1 {
     margin: 0;
 }
 
-p {
-    line-height: 1.6;
+h2 {
+    color: #0b2541;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
-a {
-    color: #2196F3;
-    text-decoration: none;
+p {
+    color: #333;
+    font-family: 'Palatino', serif;
+    font-size: 1em;
 }
 
 .navbar {
@@ -76,6 +80,14 @@ a {
     width: 100%;
 }
 
+.tech-tags span {
+  background: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
 .card-left {
     background-color: #ffffff;
     border-radius: 8px;
@@ -83,20 +95,10 @@ a {
     padding: 20px;
     margin: 20px;
     width: 75%;
-    text-align: start;
     margin-right: auto;
-}
-
-.card-left h2 {
-    color: #0b2541;
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 1.5em;
-}
-
-.card-left p {
-    color: #333;
-    font-family: 'Palatino', serif;
-    font-size: 1em;
+    display: flex;      
+    gap: 20px; 
+    align-items: center;
 }
 
 .card-right {
@@ -105,7 +107,50 @@ a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
-    text-align: end;
     width: 75%;
     margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    text-align: end;
+    align-items: center;
+}
+
+.card-left .card-text,
+.card-right .card-text {
+    flex: 1; 
+}
+
+.card-tall {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: start;
+    width: 30%;
+    min-height: 400px;
+    aspect-ratio: 1/1.25;
+    box-sizing: border-box;
+    
+}
+
+.card-container-tall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.nav-button {
+  padding-top: 20px;
+}
+
+.card-left img,
+.card-right img {
+    width: 150px;                  /* Fixed width for images */
+    height: auto;                  /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;             /* Prevent image distortion */
 }
