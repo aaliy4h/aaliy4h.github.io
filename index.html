@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
@@ -14,7 +14,6 @@
         <div class="navbar-title">Aaliyah's Portfolio</div>
         <ul>
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </ul>
@@ -26,70 +25,100 @@
 
     <div class="card-container">
 
-        <div class="card-left">
+        <div class="card">
+            <img src="assets/taskgardenicon.PNG" alt="TaskGarden App Screenshot">
+
             <div class="card-text">
                 <h2>TaskGarden: A Task Manager App for People with ADHD</h2>
-                <p>An Apple Watch app that helps people with ADHD manage their time, with features based on real user
-                    insights.</p>
+                <p>An Apple Watch productivity app designed specifically for ADHD users, featuring:</p>
+                <ul>
+                    <li>Gamified task completion with progress tracking</li>
+                    <li>Haptic feedback & Pomodoro timer to combat procrastination</li>
+                    <li>Siri integration for quick task addition</li>
+                    <li>Development based on user feedback from 31 participants</li>
+                </ul>
+
                 <div class="tech-tags">
                     <span>SwiftUI</span>
                     <span>WatchOS</span>
                     <span>User Research</span>
                 </div>
                 <div class="nav-button">
-                    <a href="projects/taskgarden.html">More Details...</a>
+                    <a href="taskgarden.html">More Details...</a>
                 </div>
             </div>
-            <img src="assets/taskgardenicon.PNG" alt="TaskGarden App Screenshot">
         </div>
 
-        <div class="card-right">
+        <div class="card">
+            <img src="assets/taskgardenicon.PNG" alt="Trivia Game App Screenshot">
+
             <div class="card-text">
                 <h2>Trivia Game for Android</h2>
-                <p>This is a simple portfolio website showcasing my projects and skills.</p>
+                <p>An engaging Android trivia game with:</p>
+                <ul class="card-text">
+                    <li>Variety of questions across multiple categories retrieved from an API</li>
+                    <li>Virtual pet companion that can be cared for with in-game currency</li>
+                    <li>Firebase usage for user authentication.</li>
+                    <li>Development based on user feedback from 31 participants</li>
+                </ul>
+
                 <div class="tech-tags">
                     <span>Kotlin</span>
                     <span>Firebase</span>
                     <span>APIs</span>
                 </div>
                 <div class="nav-button">
-                    <a href="projects/triviagame.html">More Details...</a>
+                    <a href="triviagame.html">More Details...</a>
                 </div>
             </div>
-            <img src="assets/taskgardenicon.PNG" alt="TaskGarden App Screenshot">
         </div>
 
-        <div class="card-left">
+        <div class="card">
+             <img src="assets/taskgardenicon.PNG" alt="Blog App Screenshot">
+
             <div class="card-text">
                 <h2>Blog Web Application</h2>
-                <p>A simple blod application that allows users to create, edit, and delete posts, comments on posts, and
-                    like posts.</p>
+                <p>A full-stack blog platform featuring:</p>
+                <ul class="card-text">
+                    <li>User authentication & user permissions</li>
+                    <li>Real-time likes and comments using AJAX</li>
+                    <li>A modern interface built with Laravel (PHP MVC framework)</li>
+                    <li>Docker based deployment for easy scaling</li>
+                </ul>
+
                 <div class="tech-tags">
                     <span>Laravel</span>
                     <span>Docker</span>
                     <span>PHP</span>
                 </div>
                 <div class="nav-button">
-                    <a href="projects/blogapp.html">More Details...</a>
+                    <a href="blogapp.html">More Details...</a>
                 </div>
             </div>
-            <img src="assets/taskgardenicon.PNG" alt="TaskGarden App Screenshot">
         </div>
 
-        <div class="card-right">
+        <div class="card">
+            <img src="assets/taskgardenicon.PNG" alt="2D Game Screenshot">
+
             <div class="card-text">
                 <h2>Top-Down 2D Game in Unity</h2>
-                <p>A 2D Unity</p>
+                <p>A simple 2D top-down style game showcasing:</p>
+                <ul class="card-text">
+                    <li>Custom NPC AI with pathfinding algorithms</li>
+                    <li>Persistent score system with JSON save/load</li>
+                    <li>Tilemap-based level design</li>
+                    <li>Following good programming practices for clean and maintainable code</li>
+                </ul>
+                
                 <div class="tech-tags">
                     <span>C#</span>
                     <span>Game Design</span>
                     <span>Programming Patterns</span>
                 </div>
                 <div class="nav-button">
-                    <a href="projects/unitygame.html" class="nav-button">More Details...</a>
+                    <a href="unitygame.html" class="nav-button">More Details...</a>
                 </div>
             </div>
-            <img src="assets/taskgardenicon.PNG" alt="TaskGarden App Screenshot">
         </div>
     </div>
 </body>
