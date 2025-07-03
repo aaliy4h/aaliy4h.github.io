@@ -85,6 +85,7 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 30px;
     padding: 30px;
+    align-items: stretch; 
 }
 
 .tech-tags span {
@@ -103,33 +104,20 @@ li {
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    align-items: stretch;
+    height: 100%;
+    
 }
 
 .card-text {
     padding: 15px;
-}
-
-.card-tall {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    text-align: start;
-    width: 30%;
-    min-height: 400px;
-    aspect-ratio: 1/1.25;
-    box-sizing: border-box;
-    
-}
-
-.card-container-tall {
+    flex-grow: 1; /* Pushes the 'More Details' button to the bottom */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px; /* Even vertical spacing between items */
+
 }
 
 .card img {
@@ -144,7 +132,8 @@ li {
 }
 
 .nav-button {
-    margin-top: 15px;
+    margin: 15px;
+
 }
 
 .nav-button a {
@@ -160,4 +149,10 @@ li {
 
 .nav-button a:hover {
     background-color: #163d66;
+}
+
+.card-text h2,
+.card-text p,
+.card-text ul {
+    margin: 0;
 }
