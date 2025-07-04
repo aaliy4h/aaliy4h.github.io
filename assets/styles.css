@@ -22,7 +22,8 @@ h2 {
     color: #0b2541;
 }
 
-p, li {
+p,
+li {
     font-size: 1rem;
     line-height: 1.6;
     margin: 5px 0;
@@ -85,38 +86,41 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 30px;
     padding: 30px;
-    align-items: stretch; 
+    align-items: stretch;
 }
 
 .tech-tags span {
-  background: #f0f0f0;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
 }
 
 .card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Ensure content starts from the top */
+    justify-content: flex-start;
+    /* Ensure content starts from the top */
     align-items: stretch;
     height: 100%;
-    
+
 }
 
 .card-text {
     padding: 15px;
-    flex-grow: 1; /* Pushes the 'More Details' button to the bottom */
+    flex-grow: 1;
+    /* Pushes the 'More Details' button to the bottom */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px; /* Even vertical spacing between items */
+    gap: 10px;
+    /* Even vertical spacing between items */
 
 }
 
@@ -155,4 +159,27 @@ li {
 .card-text p,
 .card-text ul {
     margin: 0;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.video-grid video {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 1 1 auto;
+}
+
+
+@media (max-width: 768px) {
+    .video-grid video {
+        flex: 1 1 100%;
+    }
 }
