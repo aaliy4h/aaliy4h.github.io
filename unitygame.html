@@ -28,14 +28,55 @@
         <div class="card">
 
             <div class="card-text">
-                <h2>TaskGarden: A Task Manager App for People with ADHD</h2>
-                <p>A Kotlin-based quiz game with multiple categories, real-time scoring, and smooth UI transitions.
-                    Designed for mobile devices with a responsive layout.</p>
+                <h2>About</h2>
+                <p>
+                    This project is a top-down 2D game developed in Unity, 
+                    where the player can move around a tilemap-based world, collect items, and engage in combat with hostile NPCs. 
+                    The game features a drag-and-drop inventory system with a toolbar for quick access to items like potions, 
+                    which can heal the player or grant temporary effects (e.g. increased speed).
+                    Players earn points by defeating enemies and collecting items. 
+                    NPCs follow preset paths during the first half of the in-game “day,” but become hostile in the second half. 
+                    When hostile, they will deviate from their path to chase the player if they come within range, 
+                    adding a strategic layer to movement and combat.
+                </p>
+
+                <h2>Key Features</h2>
+                <p>
+                <ul>
+                    <li>Local leaderboard using JSON for save/load functionality</li>
+                    <li>Tilemap-based environment with careful attention to layering and collision handling</li>
+                    <li>Potions with unique effects:</li>
+                        <ul>
+                            <li>Slightly rewind or fast-forward time</li>
+                            <li>Grant temporary invisibility from hostiles</li>
+                            <li>Spawn a random NPC that attacks either the player or hostiles</li>
+                        </ul>                    
+                    <li>NPCs with pathfinding and player-chasing behaviour</li>
+                    <li>Drag-and-drop inventory system with a toolbar for fast item use</li>
+                </ul>
+
+                </p>
+
+                <h2>Challenges</h2>
+                <p>
+                    One of the main challenges was designing tilemaps with precise layering and collision mechanics, 
+                    particularly for tiles that should partially obstruct the player. 
+                    Implementing NPC pathfinding and dynamic hostility also required careful logic and tuning, 
+                    especially to make transitions between passive and aggressive behaviour feel smooth and responsive.
+                    Another significant hurdle was learning to work with Unity3D, 
+                    as I had very little prior experience with the engine. 
+                    I had to quickly get to grips with its structure — understanding where different components belong, 
+                    how to manage scenes, and how Unity's event and scripting systems tie everything together. 
+                    This learning curve was steep but rewarding, and it gave me a solid foundation in using Unity 
+                    for 2D game development.
+                </p>
 
                 <div class="tech-tags">
-                    <span>Kotlin</span>
-                    <span>Android Studio</span>
-                    <span>Jetpack Compose</span>
+                    <span>C#</span>
+                    <span>Unity3D</span>
+                    <span>Object-Oriented Programming</span>
+                    <span>Building Maintainable Code</span>
+                    <span>Git</span>
                 </div>
 
             </div>
